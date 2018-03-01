@@ -1,15 +1,14 @@
-class TeachersController < ApplicationController
+class StudentsController < ApplicationController
   def new
-    @placeholder_course = '186'
+    @placeholder_drink = 'Taro Milk Tea'
   end
 
   def create
-    # Hint: params??
 
     # YOUR CODE HERE
     @full_name = params[:full_name]
-    @course = params[:course_name]
-    @grade_level = params[:grade_level]
+    @boba_drink = params[:boba_drink]
+    @superhero_power = params[:superhero_power]
 
     # This line is explicitly declaring that this controller method should render/serve the
     # 'views/teachers/show.html.erb' view. Otherwise, the controller would try to look for a 
